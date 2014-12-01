@@ -19,6 +19,12 @@
 		17A5D3581A212B70005D5236 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A5D3401A212B70005D5236 /* UIKit.framework */; };
 		17A5D3601A212B70005D5236 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17A5D35E1A212B70005D5236 /* InfoPlist.strings */; };
 		17A5D3621A212B70005D5236 /* OKMathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5D3611A212B70005D5236 /* OKMathTests.m */; };
+		17A5D3731A212C25005D5236 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5D3711A212C25005D5236 /* MainViewController.m */; };
+		17A5D3741A212C25005D5236 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17A5D3721A212C25005D5236 /* MainViewController.xib */; };
+		17A5D3771A213479005D5236 /* OKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5D3761A213479005D5236 /* OKModel.m */; };
+		17A5D37C1A2153BD005D5236 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5D37A1A2153BD005D5236 /* StartViewController.m */; };
+		17A5D37D1A2153BD005D5236 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17A5D37B1A2153BD005D5236 /* StartViewController.xib */; };
+		17A5D3801A2A9839005D5236 /* OKMathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5D37F1A2A9839005D5236 /* OKMathManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,16 @@
 		17A5D35D1A212B70005D5236 /* OKMathTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OKMathTests-Info.plist"; sourceTree = "<group>"; };
 		17A5D35F1A212B70005D5236 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17A5D3611A212B70005D5236 /* OKMathTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKMathTests.m; sourceTree = "<group>"; };
+		17A5D3701A212C25005D5236 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		17A5D3711A212C25005D5236 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		17A5D3721A212C25005D5236 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		17A5D3751A213479005D5236 /* OKModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKModel.h; sourceTree = "<group>"; };
+		17A5D3761A213479005D5236 /* OKModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKModel.m; sourceTree = "<group>"; };
+		17A5D3791A2153BD005D5236 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		17A5D37A1A2153BD005D5236 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		17A5D37B1A2153BD005D5236 /* StartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
+		17A5D37E1A2A9838005D5236 /* OKMathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKMathManager.h; sourceTree = "<group>"; };
+		17A5D37F1A2A9839005D5236 /* OKMathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKMathManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +123,8 @@
 		17A5D3421A212B70005D5236 /* OKMath */ = {
 			isa = PBXGroup;
 			children = (
+				17A5D36C1A212B84005D5236 /* Model */,
+				17A5D36B1A212B79005D5236 /* Controller */,
 				17A5D34B1A212B70005D5236 /* AppDelegate.h */,
 				17A5D34C1A212B70005D5236 /* AppDelegate.m */,
 				17A5D34E1A212B70005D5236 /* Images.xcassets */,
@@ -142,6 +160,46 @@
 				17A5D35E1A212B70005D5236 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17A5D36B1A212B79005D5236 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17A5D3781A2153A1005D5236 /* Start */,
+				17A5D36F1A212C0F005D5236 /* Main */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		17A5D36C1A212B84005D5236 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17A5D3751A213479005D5236 /* OKModel.h */,
+				17A5D3761A213479005D5236 /* OKModel.m */,
+				17A5D37E1A2A9838005D5236 /* OKMathManager.h */,
+				17A5D37F1A2A9839005D5236 /* OKMathManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		17A5D36F1A212C0F005D5236 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				17A5D3701A212C25005D5236 /* MainViewController.h */,
+				17A5D3711A212C25005D5236 /* MainViewController.m */,
+				17A5D3721A212C25005D5236 /* MainViewController.xib */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		17A5D3781A2153A1005D5236 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				17A5D3791A2153BD005D5236 /* StartViewController.h */,
+				17A5D37A1A2153BD005D5236 /* StartViewController.m */,
+				17A5D37B1A2153BD005D5236 /* StartViewController.xib */,
+			);
+			name = Start;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +278,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				17A5D3471A212B70005D5236 /* InfoPlist.strings in Resources */,
+				17A5D37D1A2153BD005D5236 /* StartViewController.xib in Resources */,
+				17A5D3741A212C25005D5236 /* MainViewController.xib in Resources */,
 				17A5D34F1A212B70005D5236 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,7 +300,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				17A5D34D1A212B70005D5236 /* AppDelegate.m in Sources */,
+				17A5D3731A212C25005D5236 /* MainViewController.m in Sources */,
+				17A5D37C1A2153BD005D5236 /* StartViewController.m in Sources */,
 				17A5D3491A212B70005D5236 /* main.m in Sources */,
+				17A5D3771A213479005D5236 /* OKModel.m in Sources */,
+				17A5D3801A2A9839005D5236 /* OKMathManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
